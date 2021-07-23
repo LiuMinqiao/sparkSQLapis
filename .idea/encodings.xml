@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/datasource/namesAndFavColors.parquet/part-00000-12bb9e19-aad2-4100-9994-564c8dab74fe-c000.snappy.parquet" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/datasource/namesPartByColor.parquet/favorite_color=red/part-00000-d3bca7a0-df47-4ba0-b3c8-b43d0a095ea5.c000.snappy.parquet" charset="UTF-16" />
+  </component>
+</project>
