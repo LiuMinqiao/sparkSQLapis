@@ -1103,13 +1103,13 @@ otherPeople.show()
 
 ### Hive表格
 
-spark-sql支持读写存储在hive里的数据。到那时，由于hive有很多依赖，这些依赖不包含在spark里面，如果hive依赖可以在类路径找到，spark会加载它们。注意这些hive依赖必须要被所有work节点看到，因为它们需要获取到hive序列化、反序列化库serDes为了获得在hive里的数据。
+spark-sql支持读写存储在hive里的数据。但是，hive有很多依赖，这些依赖不包含在spark里面，如果hive依赖可以在类路径找到，spark会加载它们。注意这些hive依赖必须要被所有work节点看到，因为它们需要获取到hive序列化、反序列化库serDes为了获得在hive里的数据。
 
 
 
 通过把`hive-site.xml`, `core-site.xml` (for security configuration), and `hdfs-site.xml` (for HDFS configuration)文件放到conf/目录下完成hive配置。
 
-当使用hive的时候，必须实例化sparksession，使用hive支持，包括连接到一个持久的hive metastore, hive serdes,以及hive的用户自定义函数。如果没有hive的部署，用户有何额能够获得hive支持。当没有配置hive-site.xml,context自动在当前目录创建metastore_db，通过spark.sql.warehouse.dir配置创建一个目录，它默认为spark-warehouse在当前目录，就是程序启动的地方。
+当使用hive的时候，必须实例化sparksession，使用hive支持，包括连接到一个持久的hive metastore, hive serdes,以及hive的用户自定义函数。如果没有hive的部署，用户仍然能够获得hive支持。当没有配置hive-site.xml,context自动在当前目录创建metastore_db，通过spark.sql.warehouse.dir配置创建一个目录，它默认为spark-warehouse在当前目录，就是程序启动的地方。
 
 注意，hive-site.xml 里的hive.metastore.warehouse.dir自从2.0.0开开始反对，使用spark.sql.warehouse.dir指定才仓库种数据库的默认位置。 可能需要给用户授权写的权限。
 
@@ -1203,3 +1203,4 @@ spark.sql("SELECT * FROM records r JOIN src s ON r.key = s.key").show()
 ./bin/spark-sql
 ```
 
+把  `hive-site.xml`, `core-site.xml` and `hdfs-site.xml`放到conf/目录下完成配置
