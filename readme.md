@@ -13,7 +13,7 @@
 
 Spark SQL is a Spark module for structured data processing. Unlike the basic Spark RDD API, the interfaces provided by Spark SQL 
 ovide Spark with more information about the structure of both the data and the computation being performed.
-   spark SQL是一个spark 模块，用于结构化数据的处理。不想基本的spark rdd api,这些由spark sql提供的接口给spark提供了关于数据和正在这行的计算的结构的信息。
+   spark SQL是一个spark 模块，用于结构化数据的处理。不像基本的spark rdd api,这些由spark sql提供的接口给spark提供了关于数据和正在这行的计算的结构的信息。
    
 Internally, Spark SQL uses this extra information to perform extra optimizations. There are several ways to interact with Spark SQL including SQL and the Dataset API. When computing a result the same execution engine is used,
 从内部来说，spark sql使用这种额外信息来执行一些优化。有很多种方式和spark sql 交互，包括SQL和dataset api.当计算一个结果时， 会使用相同的执行引擎。
