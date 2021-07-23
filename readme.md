@@ -2,6 +2,10 @@
 
 # Overview
 
+## 说明
+
+翻译自 https://spark.apache.org/docs/2.2.1/sql-programming-guide.html， spark 2.2.1版本的spark-sql文档的中文翻译。
+
 ## Overview
 
 ```java
@@ -990,7 +994,7 @@ root
 
 parquet还支持结构进化，用户可从简单结构开始，逐渐加列到这个结构，这样，可能会有多个parquet文件带有不同的但是兼容的结构。parquet数据源现在能自动探测这种情况，合并所有这些文件的结构。
 
-由于合并是一个贵操作，1.5.0卡时候默认关闭这个功能，通过以下步骤开启：
+由于合并是一个贵操作，1.5.0版本开始默认关闭这个功能，通过以下步骤开启：
 
 1 设置数据源选项mergeSchema 为true, 当读取parquet文件，或者
 
