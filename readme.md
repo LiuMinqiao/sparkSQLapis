@@ -4,7 +4,7 @@
 
 ## 说明
 
-翻译自 https://spark.apache.org/docs/2.2.1/sql-programming-guide.html， spark 2.2.1版本的spark-sql文档的中文翻译。
+翻译自 https://spark.apache.org/docs/2.2.1/sql-programming-guide.html spark 2.2.1版本的spark-sql文档的中文翻译。
 
 ## Overview
 
